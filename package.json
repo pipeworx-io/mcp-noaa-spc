@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-noaa-spc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NOAA SPC MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-4ef5e6348fd25246d3cfdf05ee0e588a1c64827b20b172dabc75deb493958741",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-f92ea46e61687d544835d03028936d76a0fff3f77dc1b48868a7b0597c158f6b",
+    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
   }
 }
