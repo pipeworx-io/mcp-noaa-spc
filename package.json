@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-noaa-spc",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "NOAA SPC MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-noaa-spc": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "noaa-spc"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-noaa-spc.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/noaa-spc",
   "pipeworx": {
-    "sourceHash": "v1-5a754f8f26e9e378613b0e951cff9f03bc1321236ff46a9800b8720f6adeaa91",
-    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
+    "mode": "gateway",
+    "slug": "noaa-spc",
+    "gatewaySlug": "noaa-spc",
+    "sourceHash": "v1-a01acb6feed4c5b9cf4cee1113ab5326dd243f73a984f0d081b5b3675652fa62",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }

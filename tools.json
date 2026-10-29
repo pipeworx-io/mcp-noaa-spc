@@ -1,0 +1,48 @@
+[
+  {
+    "name": "convective_outlook",
+    "description": "Day-N convective outlook GeoJSON.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "day": {
+          "type": "number",
+          "description": "1 (default) | 2 | 3"
+        }
+      }
+    }
+  },
+  {
+    "name": "mesoscale_discussions",
+    "description": "Recent mesoscale discussions list (as text page).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "storm_reports",
+    "description": "Fetch NOAA SPC preliminary storm reports CSV for a given date (YYMMDD, default today UTC) filtered by kind: tornado, wind, hail, or filtered (combined). Returns raw CSV with time, location, magnitude, and remarks.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "YYMMDD (default today UTC)"
+        },
+        "kind": {
+          "type": "string",
+          "description": "tornado | wind | hail | filtered (default)"
+        }
+      }
+    }
+  },
+  {
+    "name": "watches_active",
+    "description": "Currently-active watches summary text.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
